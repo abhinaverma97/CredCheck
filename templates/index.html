@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CredCheck - Misinformation Detection Tool</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">CredCheck</div>
+        <div class="nav-links">
+            <a href="#dashboard" class="nav-link">Dashboard</a>
+            <a href="#news-check" class="nav-link">News Check</a>
+            <a href="#real-time-analysis" class="nav-link">Analysis</a>
+            <a href="#about" class="nav-link">About</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">MISINFORMATION <span class="accent">DETECTION</span> TOOL</h1>
+            <p class="hero-subtitle">Verify the authenticity of news from multiple sources and formats</p>
+            <div class="hero-buttons">
+                <a href="#news-check" class="btn btn-primary">Get Started</a>
+                <a href="#about" class="btn btn-secondary">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dashboard Section -->
+    <section id="dashboard" class="section-container">
+        <div class="section-header">
+            <h2 class="section-title">Dashboard</h2>
+            <p class="section-subtitle">Overview of news analysis statistics</p>
+        </div>
+
+        <div class="card">
+            <div class="section" id="statistics">
+                <!-- Statistics will be loaded here -->
+            </div>
+            <div class="charts-container">
+                <div class="chart-item">
+                    <h3>News Distribution</h3>
+                    <div id="news-distribution-chart" class="chart-container">
+                        <!-- Pie chart will be rendered here -->
+                    </div>
+                </div>
+                <div class="chart-item">
+                    <h3>Analysis Trend</h3>
+                    <div id="analysis-trend-chart" class="chart-container">
+                        <!-- Line chart will be rendered here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Check Section -->
+    <section id="news-check" class="section-container">
+        <div class="section-header">
+            <h2 class="section-title">News Check</h2>
+            <p class="section-subtitle">Verify news headlines and content from various sources</p>
+        </div>
+
+        <div class="card">
+            <div class="input-container">
+                <input type="text" id="headline-input" placeholder="Enter the news headline..." class="main-input">
+            </div>
+
+            <div class="input-methods">
+                <button id="text-btn" class="method-btn active">
+                    <i class="fas fa-font"></i> Text
+                </button>
+                <button id="image-btn" class="method-btn">
+                    <i class="fas fa-image"></i> Image
+                </button>
+                <button id="audio-btn" class="method-btn">
+                    <i class="fas fa-headphones"></i> Audio
+                </button>
+                <button id="video-btn" class="method-btn">
+                    <i class="fas fa-video"></i> Video
+                </button>
+            </div>
+
+            <div id="file-upload-container" style="display: none;">
+                <input type="file" id="file-upload" accept="" class="file-input">
+                <label for="file-upload" class="file-label">
+                    <i class="fas fa-cloud-upload-alt"></i>
+                    <span>Choose a file or drag it here</span>
+                </label>
+            </div>
+
+            <button id="analyze-btn" class="btn btn-primary">Analyze</button>
+
+            <div id="analysis-results" class="results-container">
+                <!-- Results will be displayed here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Real Time Analysis Section -->
+    <section id="real-time-analysis" class="section-container">
+        <div class="section-header">
+            <h2 class="section-title">Real Time News Analysis</h2>
+            <p class="section-subtitle">Analyze current trending headlines and real-time news</p>
+        </div>
+
+        <div class="card">
+            <div class="tabs-container">
+                <div class="tab-buttons">
+                    <button class="tab-btn" data-tab="top-headlines">Top Headlines</button>
+                    <button class="tab-btn active" data-tab="real-time-news">News Articles</button>
+                    <button class="tab-btn" data-tab="video-feed">Video Feed</button>
+                    <button class="tab-btn" data-tab="live-broadcast">Live Broadcast</button>
+                </div>
+
+                <div class="tab-content">
+                    <div class="tab-pane" id="top-headlines-tab">
+                        <button id="fetch-headlines-btn" class="btn btn-primary">
+                            <i class="fas fa-newspaper"></i> Fetch Top Headlines
+                        </button>
+
+                        <div id="headlines-container" class="results-container">
+                            <!-- Headlines will be displayed here -->
+                        </div>
+
+                        <div id="headlines-analysis" class="results-container">
+                            <!-- Analysis results will be displayed here -->
+                        </div>
+                    </div>
+
+                    <div class="tab-pane active" id="real-time-news-tab">
+                        <div class="real-time-news-header">
+                            <p class="real-time-description">
+                                Our system continuously monitors news from various trusted sources and analyzes them for
+                                credibility in real-time.
+                            </p>
+                            <button id="fetch-real-time-news-btn" class="btn btn-primary">
+                                <i class="fas fa-rss"></i> Refresh News Articles
+                            </button>
+                        </div>
+
+                        <div id="real-time-news-container" class="results-container">
+                            <!-- Real-time news will be displayed here -->
+                            <div class="loading"></div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane" id="video-feed-tab">
+                        <div class="video-feed-header">
+                            <p class="video-feed-description">
+                                Analyze recent news videos from trusted sources. Our system extracts captions and
+                                analyzes them for credibility.
+                            </p>
+                            <button id="fetch-video-feed-btn" class="btn btn-primary">
+                                <i class="fas fa-video"></i> Get Video Feed
+                            </button>
+                        </div>
+
+                        <div id="video-feed-container" class="results-container">
+                            <!-- Video feed will be displayed here -->
+                        </div>
+                    </div>
+
+                    <div class="tab-pane" id="live-broadcast-tab">
+                        <div class="live-broadcast-header">
+                            <p class="live-broadcast-description">
+                                Watch live news broadcasts while our AI analyzes the content in real-time for
+                                credibility.
+                                The system transcribes the audio, extracts news items, and classifies them as real or
+                                fake.
+                            </p>
+                            <button id="refresh-live-broadcast-btn" class="btn btn-primary">
+                                <i class="fas fa-sync"></i> Refresh Analysis
+                            </button>
+                        </div>
+
+                        <div class="live-broadcast-content">
+                            <div class="live-video-container">
+                                <h3>Live News Stream</h3>
+                                <div id="youtube-player"></div>
+                            </div>
+
+                            <div class="live-analysis-container">
+                                <h3>Real-Time Analysis</h3>
+                                <div id="live-analysis-results" class="results-container">
+                                    <!-- Live analysis results will be displayed here -->
+                                    <div class="loading"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section" id="recent-analyses">
+                <!-- Recent analyses will be loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-container">
+        <div class="section-header">
+            <h2 class="section-title">About CredCheck</h2>
+            <p class="section-subtitle">Combating misinformation in the digital age</p>
+        </div>
+
+        <div class="about-content">
+            <div class="about-text">
+                <p>CredCheck is a multimodal, multilingual misinformation detection tool designed to help users verify
+                    the authenticity of news from various sources including text, images, audio, and video.</p>
+                <p>With powerful AI and machine learning capabilities, CredCheck analyzes content across multiple
+                    dimensions to provide you with reliable authenticity assessments.</p>
+                <div class="features">
+                    <div class="feature">
+                        <i class="fas fa-globe"></i>
+                        <h4>Multilingual Support</h4>
+                        <p>Analyze content in different languages</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-chart-line"></i>
+                        <h4>Real-time Analysis</h4>
+                        <p>Get instant verification of news headlines</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-file-alt"></i>
+                        <h4>Multiple Formats</h4>
+                        <p>Process text, images, audio, and video</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h3>CredCheck</h3>
+                <p>Misinformation Detection Tool</p>
+            </div>
+            <div class="footer-links">
+                <h4>Navigation</h4>
+                <a href="#dashboard">Dashboard</a>
+                <a href="#news-check">News Check</a>
+                <a href="#real-time-analysis">Analysis</a>
+                <a href="#about">About</a>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <p>A Prototype Developed by <strong>Team Ignite</strong></p>
+                <p>For <span class="highlight">TruthTell Hackathon</span></p>
+                <p><small>Your analysis results are securely stored in a local database.</small></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 CredCheck. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <script>
+        // Add tab functionality
+        document.addEventListener('DOMContentLoaded', function () {
+            const tabButtons = document.querySelectorAll('.tab-btn');
+            const tabPanes = document.querySelectorAll('.tab-pane');
+
+            tabButtons.forEach(button => {
+                button.addEventListener('click', function () {
+                    // Remove active class from all buttons and panes
+                    tabButtons.forEach(btn => btn.classList.remove('active'));
+                    tabPanes.forEach(pane => pane.classList.remove('active'));
+
+                    // Add active class to clicked button
+                    this.classList.add('active');
+
+                    // Show the corresponding pane
+                    const tabId = this.getAttribute('data-tab');
+                    document.getElementById(tabId + '-tab').classList.add('active');
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
