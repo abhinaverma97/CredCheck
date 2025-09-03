@@ -1,0 +1,36 @@
+# Core dependencies
+flask==2.3.3
+numpy==1.24.3
+pandas==2.0.3
+requests==2.31.0
+python-dotenv==1.0.0
+
+# NLP and ML tools
+transformers==4.35.2
+torch==2.0.1
+scikit-learn==1.3.0
+langdetect==1.0.9
+google-generativeai==0.3.1
+absl-py==1.4.0
+
+# Audio/Video processing
+openai-whisper==20231117
+yt-dlp==2023.11.16
+ffmpeg-python==0.2.0
+pytesseract==0.3.10
+Pillow==10.0.1
+
+# Google APIs
+google-api-python-client==2.107.0
+google-auth==2.23.0
+google-auth-httplib2==0.1.1
+google-auth-oauthlib==1.1.0
+
+# Web scraping and content processing
+beautifulsoup4==4.12.2
+feedparser==6.0.10
+youtube-transcript-api==0.6.1
+isodate==0.6.1
+
+# Database
+SQLAlchemy==2.0.21 

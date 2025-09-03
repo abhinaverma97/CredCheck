@@ -1,0 +1,78 @@
+Time: 2025-04-09 23:58:18
+News: Breaking news from Washington: The Senate has passed a new climate bill today with bipartisan support. The legislation aims to reduce carbon emissions by 50% by 2030 through investment in renewable energy infrastructure.
+Classification: FAKE
+Verdict: Fake
+--------------------------------------------------------------------------------
+
+Time: 2025-04-09 23:59:11
+News: Federal Reserve has announced it will maintain current interest rates, citing concerns about inflation. Market analysts had predicted a quarter-point increase.
+Classification: FAKE
+Verdict: Fake
+--------------------------------------------------------------------------------
+
+Time: 2025-04-10 00:00:37
+News: Scientists at MIT have announced a breakthrough in quantum computing technology. Their new chip design can maintain quantum coherence for up to 10 minutes, a significant improvement over previous designs.
+Classification: FAKE
+Verdict: Fake
+--------------------------------------------------------------------------------
+
+Time: 2025-04-10 00:01:14
+News: Health officials warn of a new virus strain spreading in Southeast Asia. The WHO has issued travel advisories for the region while researchers study the pathogen's transmission patterns.
+Classification: FAKE
+Verdict: Fake
+--------------------------------------------------------------------------------
+
+Time: 2025-04-10 00:02:10
+News: Tech giant Microsoft has unveiled plans to invest $5 billion in AI research centers across Europe. The company says this will create approximately 10,000 new jobs over the next five years.
+Classification: FAKE
+Verdict: Fake
+--------------------------------------------------------------------------------
+
+Time: 2025-04-11 19:09:06
+News: An immigration judge is set to rule on whether Palestinian activist Mamou Halil will be deported from the U.S. for his role in organizing protests at Columbia University against Israel's actions in Gaza. Halil, a permanent resident of the U.S., was detained and sent to a detention facility almost 2,000 kilometers south of his home in New York. He is married to an American woman who is weeks away from giving birth to their first child. The Trump administration is seeking to revoke his visa and deport him based on a 1952 law that allows the deportation of any immigrant seen as harmful to U.S. foreign policy. The government argues that Halil's presence undermines U.S. foreign policy.
+Classification: REAL
+Verdict: Real
+--------------------------------------------------------------------------------
+
+Time: 2025-04-11 19:11:15
+News: Sudan's capital Khartoum has been experiencing electricity blackouts for four days due to drone strikes by the paramilitary Rapid Support Forces (RSF) on a hydroelectric dam in northern Sudan. The blackouts have caused significant difficulties for residents, including the inability to charge phones, which are essential for online banking and accessing educational materials. Additionally, the lack of electricity has led to a lack of running water in Umdurman, a part of Khartoum, as the water supply is connected to the power grid. The RSF has been fighting the Sudanese army for two years and has repeatedly targeted vital infrastructure. These recent attacks on the hydroelectric dam come after the army pushed the paramilitary group out of the capital Khartoum.
+Classification: REAL
+Verdict: Real
+--------------------------------------------------------------------------------
+
+Time: 2025-04-11 19:13:14
+News: The conflict in Sudan has caused what the UN is calling the world's worst humanitarian crisis. Thirty million people, more than half the population, need help including sixteen million children. Two years of fighting have also led to the world's largest and fastest growing displacement crisis with more than fourteen million people forced from their homes. The UN has confirmed famine in North Darfur and says another seventeen regions are at risk. Malnutrition rates are among the highest globally with nearly five million children younger than five and pregnant women being acutely malnourished. Attacks on hospitals and clinics have devastated the health system, severely limiting access to treatment.
+Classification: REAL
+Verdict: Real
+--------------------------------------------------------------------------------
+
+Time: 2025-04-11 19:16:12
+News: The leader of a coup in Gabon in 2023 is ahead in the opinion polls going into Saturday's presidential election. Brie Soligui Nguema pledged to overhaul the economy when he declared himself head of the transitional government.
+Classification: REAL
+Verdict: Real
+--------------------------------------------------------------------------------
+
+Time: 2025-04-11 19:18:24
+News: Former South Korean president Yun Suk-yul has moved out of the official residence a week after his impeachment. Crowds of both supporters and opponents were on the streets as he made his way to his private home. South Korea's constitutional court removed Yun from office after he attempted to declare martial law in December. The country now prepares for elections in June, whilst Yun could face insurrection charges that might result in a life sentence.
+Classification: FAKE
+Verdict: Fake
+--------------------------------------------------------------------------------
+
+Time: 2025-04-11 19:20:38
+News: South Korea’s constitutional court upheld UNES impeachment, removing him from the country’s top office after his attempt to impose martial law in South Korea late last year. Snap elections have been set for June 3rd. Some politicians have already announced that they are running and have already resigned from their government positions as required by law. UNES’ presidency is over, but his legal challenges remain. He still faces a charge of insurrection; next week he will attend the first hearings in relation to that matter. Additionally, now without presidential immunity, he could face further criminal charges.
+Classification: FAKE
+Verdict: Fake
+--------------------------------------------------------------------------------
+
+Time: 2025-04-11 19:25:13
+News: Mohamed Salah has signed a new two-year contract with Liverpool that will keep him at the club until the end of the 2026-2027 season. The announcement was made on Liverpool's social media and ends two months of speculation surrounding his future. The Egyptian star has been instrumental in Liverpool's title push this season, scoring 27 goals. Salah, who is 32 years old, has spent eight seasons at the club and has scored 243 goals in 394 appearances. Additionally, Salah expressed his desire to win the Premier League this season, emphasizing that the fans deserve it and that the last time Liverpool won, there was not much of a celebration. He acknowledged that winning the Premier League will not be easy with seven games remaining and Arsenal also in close contention.
+Classification: REAL
+Verdict: 
+--------------------------------------------------------------------------------
+
+Time: 2025-04-11 19:29:19
+News: Justin Rose took a three-shot lead in the first round of the Masters after carding eight birdies to shoot a 7-under round of 65. He also made a birdie on the second hole of his second round, bringing him to eight under par overall. Rory McIlroy struggled late in his round with two double bogeys and settled for even par after Round 1. Defending champion and world No. 1 golfer Scotty Scheffler shot a bogey-free round and ended the day at four under par. Canadian Corey Conners joins Scheffler and Swedish golfer Ludvig Åberg at four under overall.
+Classification: REAL
+Verdict: 
+--------------------------------------------------------------------------------
+
