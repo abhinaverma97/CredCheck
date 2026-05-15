@@ -4,7 +4,7 @@
 
 CredCheck is an advanced fake news detection platform featuring a unique multilayered verification system that examines content through multiple independent analysis methods for comprehensive credibility assessment.
 
-## 🔍 Core Features
+## Core Features
 
 - **Layered Verification System**: Three independent verification methods to ensure thorough analysis:
   - **Layer 1**: Credibility check against trusted sources
@@ -27,7 +27,7 @@ CredCheck is an advanced fake news detection platform featuring a unique multila
 
 - **Responsive Design**: Modern dark-themed UI that works on all devices
 
-## 🛠️ Technology Stack
+## Technology Stack
 
 ### Backend
 - **Framework**: Flask (Python)
@@ -42,7 +42,7 @@ CredCheck is an advanced fake news detection platform featuring a unique multila
 - **Data Visualization**: Chart.js
 - **Design**: Modern dark theme with intuitive layered result display
 
-## 📋 Verification Layers Explained
+## Verification Layers Explained
 
 ### Layer 1: Credibility Check
 Searches for the headline across trusted news sources, evaluating:
@@ -61,7 +61,7 @@ When earlier layers flag content as potentially fake:
 - Breaks down content into fact-checkable claims
 - Scores each claim for factual accuracy
 
-## 🚀 Setup Instructions
+## Setup Instructions
 
 ### Prerequisites
 - Python 3.8+
